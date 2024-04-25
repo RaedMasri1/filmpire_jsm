@@ -1,10 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
-// import { BrowserRouter } from 'react-router-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 // import { Provider } from 'react-redux';
 
 // import ToggleColorModeProvider from './utils/ToggleColorMode';
-import App from "./components/App";
+import App from './components/App';
 // import store from './app/store';
 // import './index.css';
 
@@ -19,4 +19,9 @@ import App from "./components/App";
 //   document.getElementById('root'),
 // );
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root'),
+);
